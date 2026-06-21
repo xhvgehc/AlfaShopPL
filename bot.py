@@ -23,7 +23,10 @@ import time
     ADMIN_PHOTO_WAIT_ID,
     ADMIN_DESC_WAIT_TEXT,
 ) = range(9)
-DB_FILE = "bot_data.db"
+
+import os
+DB_FILE = os.environ.get('DATABASE_PATH', 'bot_data.db')
+
 ADMIN_ID = 8650119911
 
 TEXTS = {
